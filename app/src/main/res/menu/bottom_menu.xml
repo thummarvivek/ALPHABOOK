@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Home"
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:enabled="true"/>
+
+    <item android:title="Category"
+        android:id="@+id/navigation_category"
+        android:icon="@drawable/ic_baseline_category_24"
+        android:enabled="true"/>
+
+    <item android:title="Sell"
+        android:id="@+id/navigation_sell"
+        android:icon="@drawable/ic_round_add_24"
+        android:enabled="true"/>
+
+    <item android:title="Cart"
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:enabled="true"/>
+
+
+    <item android:title="Profile"
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:enabled="true"/>
+</menu>

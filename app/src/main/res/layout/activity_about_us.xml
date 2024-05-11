@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#28808080"
+    tools:context=".About_us">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:elevation="10dp"
+        app:elevation="10dp"
+        app:expanded="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarbookdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolround"
+            android:longClickable="true"
+            app:title="About Us"
+            app:titleMargin="10dp"
+            app:titleTextColor="#F3F6FC" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:scaleType="fitCenter"
+
+                app:srcCompat="@drawable/logo" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:padding="5dp"
+            android:layout_margin="15dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="Welcome to our online bookstore where we specialize in selling and reselling old books. Our passion for literature and desire to promote sustainability led us to create this platform where book lovers can find unique and rare books, while also contributing to reducing waste and environmental impact."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Our team consists of avid readers and book collectors who understand the value of preserving literary treasures. We carefully curate our collection of books, selecting only the best and most interesting titles to offer to our customers. We take great care to ensure that each book is in good condition, and we provide accurate descriptions of any wear or damage."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="In addition to selling books, we also offer a platform for people to sell their old books. If you have books that are taking up space on your shelves but are too valuable to throw away, we can help you find a new home for them. By selling your books through our platform, you not only earn money but also contribute to the sustainable economy by extending the life of your books."/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="We believe that books are not just objects but also carry stories, knowledge, and emotions that connect people across time and space. By reselling and preserving old books, we hope to promote a culture of reading, learning, and sharing. We also strive to provide personalized and friendly service to our customers, ensuring that every purchase is a pleasant and memorable experience."/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Thank you for visiting our website, and we look forward to helping you discover your next favorite book!"/>
+            </LinearLayout>
+
+            </ScrollView>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

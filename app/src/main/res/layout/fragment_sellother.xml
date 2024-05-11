@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f3f6fc"
+    tools:context=".fragment.Sellother" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add Image"
+    android:textColor="@color/bblack"
+    android:layout_margin="15dp"
+    android:textSize="20sp"/>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/bid1"
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/plusimage">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/bid2"
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/plusimage">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/bid3"
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/plusimage">
+                </ImageView>
+
+
+
+
+
+            </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/filedbordertext"
+                android:layout_margin="20dp"
+                android:id="@+id/titlesell"
+                android:padding="10dp"
+                android:textColorHint="#96001D35"
+                android:layout_marginBottom="10dp"
+                android:hint="Title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/categoryspiner"
+                android:background="@drawable/filedbordertext"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:textColorHint="#96001D35"
+                android:drawableEnd="@drawable/arrow_down"
+                android:hint="Category"/>
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/filedbordertext"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:id="@+id/publishersell"
+                android:textColorHint="#96001D35"
+                android:hint="Publisher"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/filedbordertext"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:id="@+id/editionid"
+                android:textColorHint="#96001D35"
+                android:hint="Edition"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/filedbordertext"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:id="@+id/authoresell"
+                android:textColorHint="#96001D35"
+                android:layout_marginBottom="10dp"
+                android:hint="Authore"/>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center"
+                    android:text="auto fill address"/>
+
+                <ImageButton
+                    android:id="@+id/gpscallo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/ic_baseline_gps_fixed_24"/>
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filedbordertext"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:id="@+id/gpsseto"
+                android:textColorHint="#96001D35"
+                android:hint="Address"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filedbordertext"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:id="@+id/amountsell"
+                android:textColorHint="#96001D35"
+                android:hint="Amount"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:id="@+id/otherupload"
+                android:background="@drawable/filedborder"
+                android:textColor="@color/bblack"
+                android:text="Upload Your Book"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

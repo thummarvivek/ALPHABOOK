@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="category" >
+        <item>BCA 1</item>
+        <item>BCA 2</item>
+        <item>BCA 3</item>
+        <item>BCA 4</item>
+        <item>BCA 5</item>
+        <item>BCA 6</item>
+    </string-array>
+    <string-array name="University" >
+        <item>GU</item>
+        <item>GTU</item>
+    </string-array>
+    <string-array name="stander" >
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+
+
+
+
+
+
+    </string-array>
+    <string-array name="board">
+        <item> CBSC</item>
+        <item>GBSC</item>
+    </string-array>
+    <string-array name="gender">
+        <item>male</item>
+        <item>female</item>
+        <item>other</item>
+    </string-array>
+
+
+
+        <string-array name="arr1" >
+            <item>How to use Tantan: Swipe  manth</item>
+            <item>wait</item>
+        </string-array>
+
+        <string-array name="arr2" >
+            <item>How do i get more likes?</item>
+            <item>wait</item>
+        </string-array>
+
+        <string-array name="arr3" >
+            <item>I can\'t seem to get any matches. help!</item>
+            <item>wait</item>
+        </string-array>
+
+        <string-array name="arr4">
+            <item> How do i keep the conversation alive and intersting</item>
+            <item>wait</item>
+        </string-array>
+
+        <string-array name="arr5">
+            <item>I accidentally swiped left on someone, can i go back?</item>
+            <item>wait</item>
+        </string-array>
+
+
+
+
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f6fc"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.Category">
+
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarcategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolround"
+            android:contentDescription="@string/other"
+            android:longClickable="true"
+            app:titleMargin="10dp"
+            app:titleTextColor="#F3F6FC" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/categories"
+                android:fontFamily="@font/interfont"
+                android:textColor="#f3f6fc"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/filedborder"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:focusedByDefault="true"
+                android:id="@+id/categoryserarch"
+                android:queryHint="Search here ! ..."
+                android:iconifiedByDefault="false"
+                tools:targetApi="33" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/categoryrefersh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="90dp"
+        android:id="@+id/gridid" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</FrameLayout>

@@ -1,0 +1,281 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F3F6FC"
+    tools:context=".Editprofile">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:elevation="10dp"
+        app:expanded="true"
+        android:background="@drawable/toolround">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbareditprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolround"
+            android:contentDescription="@string/app_name"
+            android:longClickable="true"
+            app:title="Edit Profile"
+            app:titleMargin="10dp"
+            app:titleTextColor="#F3F6FC"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize">
+
+
+
+                <Space
+                    android:id="@+id/spaceid"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/profileid"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/spaceid"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    android:backgroundTint="#000"
+                    app:cardCornerRadius="150dp"
+                    android:layout_marginTop="-15dp">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/img3"
+                        android:id="@+id/profiledp"
+                        android:scaleType="centerCrop"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/profilecard"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp"
+                        android:elevation="15sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="100dp"
+                        android:backgroundTint="#fff">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="20dp">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center"
+                                android:text=""
+                                android:id="@+id/editname"
+                                android:hint="null"
+                                android:textColor="@color/bblack"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/usernameedit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="5dp"
+                                android:gravity="center"
+                                android:textColor="@color/bblack"/>
+
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="120dp"
+                    android:padding="20dp"
+                    android:layout_marginBottom="100dp"
+
+                    app:cardCornerRadius="20dp"
+                    android:elevation="20dp"
+
+                    android:id="@+id/addresssid"
+
+                    android:layout_below="@id/profileid"
+
+                    android:backgroundTint="#fff"
+                    android:background="#000">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+
+
+
+                        <TextView
+                            style="@style/edittext"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/filedbordertext"
+                            android:layout_weight="1"
+                            android:id="@+id/editdob"
+                            android:hint="Date Of Brith"
+                            android:layout_margin="20dp"
+                            android:inputType="date" />
+
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/filedbordertext"
+                            android:layout_margin="20dp"
+                            android:padding="10dp"
+                            android:textColor="#6B6F8E"
+                            android:id="@+id/editgender"
+                            android:entries="@array/gender"
+                            android:layout_marginBottom="10dp"
+                            android:hint="gender"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:layout_gravity="center"
+                                android:text="auto fill address"/>
+
+                            <ImageButton
+                                android:id="@+id/egpscall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:layout_gravity="end"
+                                android:layout_marginRight="50dp"
+                                android:src="@drawable/ic_baseline_gps_fixed_24"/>
+                        </LinearLayout>
+
+                        <EditText
+                            style="@style/edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/filedbordertext"
+                            android:layout_weight="1"
+                            android:hint="Address"
+                            android:id="@+id/editaddress"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:inputType="text" />
+
+                        <EditText
+                            style="@style/edittext"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/filedbordertext"
+                            android:layout_weight="1"
+                            android:maxLength="6"
+                            android:hint="Pincode"
+                            android:id="@+id/editpincode"
+                            android:layout_margin="20dp"
+                            android:inputType="number" />
+
+
+
+                        <EditText
+                            style="@style/edittext"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/filedbordertext"
+                            android:layout_weight="1"
+                            android:hint="Language"
+                            android:id="@+id/editlang"
+                            android:layout_margin="20dp"
+                            android:inputType="text" />
+
+                        <EditText
+                            style="@style/edittext"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/filedbordertext"
+                            android:layout_weight="1"
+                            android:hint="Social Link"
+                            android:id="@+id/editsocialmedia"
+                            android:layout_margin="20dp"
+                            android:inputType="text" />
+
+
+<!--                        <Button-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="50dp"-->
+<!--                            android:layout_margin="20dp"-->
+<!--                            android:background="@drawable/filedborder"-->
+<!--                            android:textColor="@color/bblack"-->
+<!--                            android:text="Save"/>-->
+
+
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>
+

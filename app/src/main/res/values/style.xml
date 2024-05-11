@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+
+    <style name="edittext">
+        <item name="android:layout_height"> wrap_content</item>
+        <item name="android:layout_width"> 250dp</item>
+        <item name="android:textColorHint">#6B6F8E</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:ems">10</item>
+        <item name="fontFamily">@font/interfont</item>
+    </style>
+
+    <style name="btn">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="backgroundTint">#CCCCFF</item>
+        <item name="android:textColor">#0905E7</item>
+        <item name="fontFamily">@font/interfont</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+
+    <style name="imagestyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">300dp</item>
+        <item name="android:scaleType"> fitCenter</item>
+        <item name="marginHorizontal">25dp</item>
+    </style>
+
+
+
+    <style name="booklist">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="background">@color/white</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/bblack</item>
+    </style>
+
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#FFEB3B</item>
+        <item name="colorControlActivated">#FFC107</item>
+    </style>
+
+</resources>

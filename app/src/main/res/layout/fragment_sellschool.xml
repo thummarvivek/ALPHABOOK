@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f3f6fc"
+    tools:context=".fragment.Sellschool" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical">
+
+
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/filedbordertext"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:entries="@array/stander"
+                android:textColorHint="#96001D35"
+                android:layout_marginBottom="10dp"
+                android:hint="Stander"/>
+
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/filedbordertext"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:entries="@array/board"
+                android:textColorHint="#96001D35"
+                android:layout_marginBottom="10dp"
+                android:hint="Board"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/filedbordertext"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:textColorHint="#96001D35"
+                android:hint="Publisher"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/filedbordertext"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:textColorHint="#96001D35"
+                android:hint="Edition"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/filedbordertext"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:textColorHint="#96001D35"
+                android:hint="Confirm GPS"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/filedborder"
+                android:textColor="@color/bblack"
+                android:text="Upload Your Book"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

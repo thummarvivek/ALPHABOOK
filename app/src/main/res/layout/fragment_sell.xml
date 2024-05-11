@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6FC"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.Sell">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarsell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolround"
+            android:contentDescription="@string/other"
+            android:longClickable="true"
+            app:titleMargin="10dp"
+            app:titleTextColor="#F3F6FC" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sell_books"
+                android:textColor="#f3f6fc"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:tabSelectedTextColor="#fff"
+            app:tabTextColor="#64FFFFFF"
+            android:layout_margin="5dp"
+
+            app:tabBackground="@drawable/navround"
+            app:tabIndicatorAnimationMode="linear"
+            app:tabPadding="10dp"
+            app:tabIndicatorColor="@color/bblack"
+            android:textAlignment="center"
+            android:background="#00000000">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+        <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pagersell"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/other" />
+    </LinearLayout>
+
+</FrameLayout>

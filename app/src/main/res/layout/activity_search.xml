@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6FC"
+    tools:context=".Search">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:elevation="10dp"
+        tools:ignore="MissingConstraints">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarsell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolround"
+            android:contentDescription="@string/other"
+            android:longClickable="true"
+            app:titleMargin="10dp"
+            app:titleTextColor="#F3F6FC" >
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filedborder"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:focusedByDefault="true"
+                android:id="@+id/search_bar"
+                android:queryHint="Search here ! ..."
+                android:iconifiedByDefault="false"/> >
+
+
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:background="@drawable/round"-->
+<!--                android:maxLines="1"-->
+<!--                android:hint="Seacrh Here! .."-->
+<!--                android:padding="10dp"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:drawablePadding="5dp"-->
+<!--                android:drawableLeft="@drawable/ic_baseline_search_24"-->
+<!--                android:drawableTint="@color/black"-->
+<!--                android:imeOptions="actionSearch"-->
+<!--                android:id="@+id/search_bar"/>-->
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/searchrv"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

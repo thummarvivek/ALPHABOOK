@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:textColor="@color/bblack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/interfont"
+                android:text="Register"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#fff"
+                android:gravity="center"
+                app:cardCornerRadius="30dp"
+                android:elevation="50dp">
+
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+
+
+                        <EditText
+                            android:id="@+id/registerusername"
+                            style="@style/edittext"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/filedbordertext"
+                            android:hint="Username"
+                            android:inputType="textPersonName" />
+
+
+                        <EditText
+                            android:id="@+id/registerphoneno"
+                            style="@style/edittext"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/filedbordertext"
+                            android:ems="10"
+                            android:hint="Phone no"
+                            android:maxLength="10"
+                            android:inputType="phone" />
+
+                        <EditText
+                            android:id="@+id/registeremail"
+                            style="@style/edittext"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/filedbordertext"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress" />
+
+                        <EditText
+                            android:id="@+id/registerrepassword"
+                            style="@style/edittext"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/filedbordertext"
+                            android:hint="Password"
+                            android:inputType="textPassword" />
+
+
+                        <EditText
+                            android:id="@+id/registerpassword"
+                            style="@style/edittext"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/filedbordertext"
+                            android:hint="re-password"
+                            android:inputType="textPassword" />
+
+
+                        <Button
+                            android:id="@+id/registerbtn"
+                            style="@style/btn"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/filedborder"
+                            android:text="Register" />
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/loginregister"
+                android:textColor="@color/bblack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="45dp"
+                android:gravity="right"
+                android:text="You Have Already Account"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
