@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class APPClient {
 //    public static final String BASEURL = "https://alphabookproject.000webhostapp.com/";
 //     public static final String BASEURL = "http://vivekgroup.kesug.com/Alphabook/";
-public static final String BASEURL = "http://192.168.29.154/Alphabook/";
+public static final String BASEURL = "http://192.100.10.100/Alphabook/";
 
     public static Retrofit getctient() {
 
